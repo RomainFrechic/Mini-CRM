@@ -17,7 +17,7 @@
         }).done(function(response){
 	    var customers =response.customers;
 	    for (var i=0; i<customers.length; i++){
-        $("#form").append("<ul id="+i+"></ul>");
+        $("#form").append("<ul id="+i+"></ul></br>");
 				for(var parcourListes in customers[i]){
                     $("#"+i).append("<ul>"+customers[i][parcourListes]+"</ul>");
 			}

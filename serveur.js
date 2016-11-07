@@ -12,18 +12,24 @@ app.post('/process_post',function (req, res) {
    // Préparer une sortie au format JSON
    console.log(req.body);
    response = {
-      path:"/"+req.body.path+".md",
-      title:req.body.title
-   };
+      first_name:req.body.first_name,
+      last_name:req.body.last_name,
+      company:req.body.company,
+      role:req.body.role,
+      phone:req.body.phone,
+      email:req.body.email,
+      description:req.body.description,
 
+   };
+console.log(response);
 
 
 
    fs.readFile(__dirname +'/public/crm.json', 'utf8',function(err,data){
       //transformer en objet
       var content = JSON.parse(data);
-      //mettre dans le menuJSON
-      content.menu.push(response);
+      //mettre dans le fichier crm.json
+      content.customers.push(response);
       //transformer en string
       var fileStr = JSON.stringify(content);
       if(err) throw err;
@@ -33,7 +39,7 @@ app.post('/process_post',function (req, res) {
          
       });
    });
-fs.writeFile(__dirname+'/public/'+req.body.path+".md",req.body.file,'utf8',function(err){
+fs.writeFile(__dirname+'/public/'+req.body.first_name,req.body.last_name,req.body.company,req.body.role,req.body.phone,req.body.email,req.body.description,'utf8',function(err){
    if(err) throw err;
    res.send('ok');
 });

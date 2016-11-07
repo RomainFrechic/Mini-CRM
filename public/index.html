@@ -3,10 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Mini-CRM</title>
+	<link rel="stylesheet" href="/node_modules/semantic-ui-css/semantic.css">
 	<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-<ul id="form"></ul>
+      <form action = "/process_post" method = "POST">
+        first_name: <input type = "text" name = "first_name"><br>
+        last_name: <input type = "text" name = "last_name"><br>
+        company: <input type = "text" name = "company"><br>
+        role: <input type = "text" name = "role"><br>
+        phone: <input type = "text" name = "phone"><br>
+        email: <input type = "text" name = "email"><br>
+        description: <input type = "text" name = "description"><br>
+        <br>
+         <input type = "submit" value = "Submit">
+    </form></br>
+    <ul id="form"></ul>
+
 
 	<!-- fin de votre html -->
 	<script src="/node_modules/jquery/dist/jquery.js"></script>
