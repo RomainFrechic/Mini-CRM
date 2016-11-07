@@ -1,0 +1,26 @@
+{
+  "name": "mini-crm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomainFrechic/Mini-CRM.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomainFrechic/Mini-CRM/issues"
+  },
+  "homepage": "https://github.com/RomainFrechic/Mini-CRM#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "jquery": "^3.1.1",
+    "querystring": "^0.2.0",
+    "showdown": "^1.4.4"
+  }
+}
