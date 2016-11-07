@@ -9,7 +9,7 @@
 			
 		},
 		
-    //Recuperer le ficier crm.json
+    //Requête pour Recuperer le ficier crm.json
     getMarkdown:function(response){
     	var data = $.ajax({
 		url : 'crm.json',
@@ -17,7 +17,10 @@
         }).done(function(response){
 	    var customers =response.customers;
 	    for (var i=0; i<customers.length; i++){
-        $("#form").append("<li>"+customers[i].first_name+""+customers[i].last_name+""+customers[i].company+""+customers[i].role+""+customers[i].phone+""+customers[i].email+""+customers[i].description+""+"</li>");
+        $("#form").append("<ul id="+i+"></ul>");
+				for(var parcourListes in customers[i]){
+                    $("#"+i).append("<ul>"+customers[i][parcourListes]+"</ul>");
+			}
 			console.log(i);
 	    }
 		});
