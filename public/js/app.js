@@ -12,21 +12,21 @@
     //Requête pour Recuperer le ficier crm.json
     getMarkdown:function(response){
     	var data = $.ajax({
-		url : 'crm.json',
-		method : 'GET',
-        }).done(function(response){
-	    var customers =response.customers;
-	    for (var i=0; i<customers.length; i++){
-        $("#form").append("<ul id="+i+"></ul></br>");
-				for(var parcourListes in customers[i]){
-                    $("#"+i).append("<ul>"+customers[i][parcourListes]+"</ul>");
-                    
-			}
-			console.log(i);
-	    }
-		});
-     },
-	
+    		url : 'crm.json',
+    		method : 'GET',
+    	}).done(function(response){
+    		var customers =response.customers;
+    		for (var i=0; i<customers.length; i++){
+    			$("#form").append("<ul id="+i+"></ul></br>");
+    			for(var parcourListes in customers[i]){
+    				$("#"+i).append("<ul>"+customers[i][parcourListes]+"</ul>");
+    				
+    			}
+    			console.log(i);
+    		}
+    	});
+    },
+    
 };
 
 $(document).ready(function(){
