@@ -20,13 +20,13 @@
         $("#form").append("<ul id="+i+"></ul></br>");
 				for(var parcourListes in customers[i]){
                     $("#"+i).append("<ul>"+customers[i][parcourListes]+"</ul>");
+                    
 			}
 			console.log(i);
 	    }
 		});
      },
 	
-
 };
 
 $(document).ready(function(){
