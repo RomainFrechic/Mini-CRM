@@ -41,7 +41,7 @@ app.post('/process_post',function (req, res) {
          
       });
    });
-   fs.writeFile(__dirname+'/public/'+req.body.first_name,req.body.last_name,req.body.company,req.body.role,req.body.phone,req.body.email,req.body.description,'utf8',function(err){
+   fs.writeFile(__dirname+'/public/'+req.body.id,req.body.first_name,req.body.last_name,req.body.company,req.body.role,req.body.phone,req.body.email,req.body.description,'utf8',function(err){
       if(err) throw err;
       res.send('ok');
    });

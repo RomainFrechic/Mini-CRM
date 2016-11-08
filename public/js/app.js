@@ -17,16 +17,16 @@
     	}).done(function(response){
     		var customers =response.customers;
     		for (var i=0; i<customers.length; i++){
-    			$("#form").append("<ul id="+i+"></ul></br>");
+    			$("#form").append("<tr id="+i+"></tr>");
     			for(var parcourListes in customers[i]){
-    				$("#"+i).append("<ul>"+customers[i][parcourListes]+"</ul>");
-    				
+    				$("#"+i).append("<td>"+customers[i][parcourListes]+"</td>");
+
     			}
     			console.log(i);
     		}
     	});
     },
-    
+
 };
 
 $(document).ready(function(){
