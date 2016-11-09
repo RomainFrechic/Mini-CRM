@@ -8,47 +8,63 @@
 </head>
 <body>
 	<div class="ui pointing menu">
-	    <a class="item"><font><font>Acceuil</font></font></a>
-	    <a class="active item" href="/index.html"><font><font>Formulaire</font></font></a>
+		<a class="item"><font><font>Acceuil</font></font></a>
+		<a class="active item" href="/index.html"><font><font>Formulaire</font></font></a>
 		<a class="item" href="/data.html"><font><font>CRM</font></font></a>
 		<a class="item"><font><font>Messages</font></font></a>
 	</div>
 
 	<div class="ui segment">
-	<form action = "/process_post" method = "POST" class="ui form">
-		<div class="field">
-			<input type="hidden" name="_method" value="PUT" id="id">
-		</div>
-		<div class="field">
-			<label>First Name</label>
-			<input name="first_name" placeholder="first_name" type="text">
-		</div>
-		<div class="field">
-			<label>Last Name</label>
-			<input name="last_name" placeholder="last_name" type="text">
-		</div>
-		<div class="field">
-			<label>Company</label>
-			<input name="company" placeholder="company" type="text">
-		</div>
-		<div class="field">
-			<label>role</label>
-			<input name="role" placeholder="role" type="text">
-		</div>
-		<div class="field">
-			<label>phone</label>
-			<input name="phone" placeholder="phone" type="text">
-		</div>
-		<div class="field">
-			<label>email</label>
-			<input name="email" placeholder="email" type="text">
-		</div>
-		<div class="field">
-			<label>description</label>
-			<input name="description" placeholder="description" type="text">
-		</div>
-		<button class="ui button" type="submit" value = "Submit">Submit</button>
-	</form>
+		<form action = "/process_post" method = "POST" class="ui form">
+			<div class="eight wide field">
+				<div class="field">
+					<input type="hidden" name="_method" value="PUT" id="id">
+				</div>
+			</div>
+			<div class="field">
+				<div class="eight wide field">
+					<label>First Name</label>
+					<input name="first_name" placeholder="first_name" type="text">
+				</div>
+			</div>
+			<div class="field">
+				<div class="eight wide field">
+					<label>Last Name</label>
+					<input name="last_name" placeholder="last_name" type="text">
+				</div>
+			</div>
+			<div class="field">
+				<div class="eight wide field">
+					<label>Company</label>
+					<input name="company" placeholder="company" type="text">
+				</div>
+			</div>
+			<div class="field">
+				<div class="eight wide field">
+					<label>role</label>
+					<input name="role" placeholder="role" type="text">
+				</div>
+			</div>
+			<div class="field">
+				<div class="eight wide field">
+					<label>phone</label>
+					<input name="phone" placeholder="phone" type="text">
+				</div>
+			</div>
+			<div class="field">
+				<div class="eight wide field">
+					<label>email</label>
+					<input name="email" placeholder="email" type="text">
+				</div>
+			</div>
+			<div class="field">
+				<div class="eight wide field">
+					<label>description</label>
+					<input name="description" placeholder="description" type="text">
+				</div>
+			</div>
+			<button class="ui button" type="submit" value = "Submit">Submit</button>
+		</form>
 	</div>
 	<!-- fin de votre html -->
 	<script src="/node_modules/jquery/dist/jquery.js"></script>
