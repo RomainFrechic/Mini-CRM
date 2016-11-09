@@ -7,10 +7,14 @@
 	<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <div>
-    	<a href="/data.html">CRM</a>
-    </div>
+	<div class="ui pointing menu">
+	    <a class="item"><font><font>Acceuil</font></font></a>
+	    <a class="item" href="/index.html"><font><font>Formulaire</font></font></a>
+		<a class="item" href="/data.html"><font><font>CRM</font></font></a>
+		<a class="item"><font><font>Messages</font></font></a>
+	</div>
 
+	<div class="ui segment">
 	<form action = "/process_post" method = "POST" class="ui form">
 		<div class="field">
 			<input type="hidden" name="_method" value="PUT" id="id">
@@ -45,7 +49,7 @@
 		</div>
 		<button class="ui button" type="submit" value = "Submit">Submit</button>
 	</form>
-	
+	</div>
 	<!-- fin de votre html -->
 	<script src="/node_modules/jquery/dist/jquery.js"></script>
 	<script src="/node_modules/showdown/dist/showdown.js"></script>

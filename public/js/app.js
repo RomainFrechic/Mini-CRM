@@ -6,7 +6,6 @@
 
 		init:function(){
 			this.getMarkdown();
-			
 		},
 		
     //Requête pour Recuperer le ficier crm.json
@@ -26,6 +25,7 @@
     		}
     	});
     },
+
 
 };
 
